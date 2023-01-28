@@ -1,5 +1,5 @@
 import re
-from CVSSScoreGenerator.CVSSScore import CVSSScore
+from CVSSScore import CVSSScore
 
 
 # Use dictionaries to describe the values given by the specification document for the different parts of the cvss

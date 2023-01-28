@@ -1,7 +1,7 @@
 import sys
 
-from CVSSScoreGenerator.CVSSScorePlotter import CVSSScorePlotter
-from CVSSScoreGenerator.CVSSStringParser import CVSSStringParser
+from CVSSScorePlotter import CVSSScorePlotter
+from CVSSStringParser import CVSSStringParser
 
 if __name__ == "__main__":
     # Read the CVSS string and the file name in a very basic style from the command line.
