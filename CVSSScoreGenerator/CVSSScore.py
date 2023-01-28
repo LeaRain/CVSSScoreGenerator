@@ -188,13 +188,13 @@ class CVSSScore:
 
         elif self.modified_scope_changed:
             self.environmental_score = self.round_cvss_like(
-                self.round_cvss_like(min(1.08 * (self.modified_impact + self.modified_exploitability), 10)
-                                     * self.exploit_code_maturity * self.remediation_level * self.report_confidence))
+                self.round_cvss_like(min(1.08 * (self.modified_impact + self.modified_exploitability), 10))
+                * self.exploit_code_maturity * self.remediation_level * self.report_confidence)
 
         else:
             self.environmental_score = self.round_cvss_like(
-                self.round_cvss_like(min((self.modified_impact + self.modified_exploitability), 10)
-                                     * self.exploit_code_maturity * self.remediation_level * self.report_confidence))
+                self.round_cvss_like(min((self.modified_impact + self.modified_exploitability), 10))
+                                     * self.exploit_code_maturity * self.remediation_level * self.report_confidence)
 
     def calculate_all_scores(self):
         """
@@ -209,7 +209,7 @@ class CVSSScore:
         self.calculate_temporal_score()
         self.calculate_miss()
         self.calculate_modified_impact()
-        self.calculate_exploitability()
+        self.calculate_modified_exploitability()
         self.calculate_environmental_score()
 
     def get_maximum_score(self):
