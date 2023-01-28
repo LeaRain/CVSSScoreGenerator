@@ -1,6 +1,5 @@
-import sys
-from CVSSStringParser import CVSSStringParser
-from CVSSScorePlotter import CVSSScorePlotter
+from CVSSScoreGenerator.CVSSStringParser import CVSSStringParser
+from CVSSScoreGenerator.CVSSScorePlotter import CVSSScorePlotter
 
 
 if __name__ == "__main__":

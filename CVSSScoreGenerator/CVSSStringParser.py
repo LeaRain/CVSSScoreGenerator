@@ -1,5 +1,5 @@
 import re
-from CVSSScore import CVSSScore
+from CVSSScoreGenerator.CVSSScore import CVSSScore
 
 
 attack_vector_values = {
